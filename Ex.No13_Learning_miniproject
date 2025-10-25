@@ -1,15 +1,28 @@
 # Ex.No: 10 Learning – Use Supervised Learning  
 ### DATE:                                                                            
 ### REGISTER NUMBER : 
-### AIM: 
-To write a program to train the classifier for -----------------.
-###  Algorithm:
+# Water Quality Prediction Using Machine Learning
 
-### Program:
+## Aim
+To develop a machine learning model that predicts whether water is potable (safe to drink) or not potable based on physical and chemical properties.
 
+## Dataset
+- **Source:** [Kaggle Water Potability Dataset](https://www.kaggle.com/datasets/adityakadiwal/water-potability)  
+- **File:** `data/water_potability.csv`  
+- **Description:** Contains water quality parameters like pH, hardness, solids, chloramines, sulfate, conductivity, organic carbon, trihalomethanes, turbidity, and target `Potability` (1 = potable, 0 = not potable).
 
-### Output:
+## Algorithm
+1. Load dataset and examine structure.
+2. Handle missing values (fill with median).
+3. Separate features (`X`) and target (`y`).
+4. Standardize features.
+5. Split data into training (80%) and testing (20%) sets.
+6. Train a **Random Forest Classifier**.
+7. Predict on test set and evaluate:
+   - Accuracy
+   - Confusion Matrix
+   - Classification Report (Precision, Recall, F1-Score)
 
-
-### Result:
-Thus the system was trained successfully and the prediction was carried out.
+## Results
+- Accuracy: ~82% (varies with dataset split and preprocessing)
+- Confusion Matrix Example:
